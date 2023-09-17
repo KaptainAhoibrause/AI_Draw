@@ -18,4 +18,4 @@ for y in range(0, len(coordinates)//2):
     print(a, b)
     write_read(a)
     write_read(b)
-    time.sleep(1)
+    time.sleep(3)

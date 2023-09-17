@@ -7,7 +7,7 @@ arduino = serial.Serial(port = 'COM3', baudrate =115200, timeout = .1)
 coordinates = [1,2,3,4,5,6,7,8,9,10]
 
 def write_read(x):
-    arduino.write(bytes(x, 'utf-8'))
+    arduino.write(bytes(str(x), 'utf-8'))
     time.sleep(0.05)
     data = arduino.readline()
     return data
@@ -18,4 +18,4 @@ for y in range(0, len(coordinates)//2):
     print(a, b)
     write_read(a)
     write_read(b)
-    time.sleep(3)
+    time.sleep(1)

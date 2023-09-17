@@ -15,3 +15,7 @@ def write_read(x):
 for y in range(0, len(coordinates)//2):
     a = coordinates[2 * y]
     b = coordinates[2 * y + 1]
+    print(a, b)
+    write_read(a)
+    write_read(b)
+    time.sleep(3)

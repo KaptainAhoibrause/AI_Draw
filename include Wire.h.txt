@@ -1,0 +1,39 @@
+#include <Wire.h>
+#include <Adafruit_PWMServoDriver.h>
+
+Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver();
+
+const int minPWM = 150;   // Minimum PWM value for 0 degrees
+const int maxPWM = 600;   // Maximum PWM value for 180 degrees
+
+void setup() {
+  Serial.begin(115200);
+  Serial.setTimeout(1);
+  pwm.begin();
+  pwm.setPWMFreq(50);  // Set the PWM frequency (usually 60 Hz)
+}
+
+void loop() {
+
+
+  if(Serial.available()){
+    int x = Serial.readString().toInt();
+    delay(10);
+    int y = Serial.readString().toInt();
+    //      Servo,   PWM
+    pwm.setPWM(0, 0, x);
+    pwm.setPWM(1, 0, y);
+  }
+
+
+}
+
+// Function to set angle for a specific servo (in degrees)
+void setServoAngle(int servoNum, int degrees) {
+  // Ensure the angle is within the valid range (0-180 degrees)
+  int constrainedDegrees = constrain(degrees, 0, 180);
+
+  // Map degrees to PWM range
+  int pwmValue = map(constrainedDegrees, 0, 180, minPWM, maxPWM);
+  pwm.setPWM(servoNum, 0, pwmValue);
+}

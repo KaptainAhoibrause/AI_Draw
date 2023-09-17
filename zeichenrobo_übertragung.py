@@ -1,8 +1,6 @@
 import serial
 import time
 
-a = 0
-b = 1
 
 arduino = serial.Serial(port = 'COM3', baudrate =115200, timeout = .1)
 
@@ -14,16 +12,6 @@ def write_read(x):
     data = arduino.readline()
     return data
 
-while True:
-    try:
-        num = coordinates[b]
-        value = write_read(num)
-        num = coordinates[a]
-        value = write_read(num)
-        print(value)
-        a = a + 2
-        b = b + 2
-        print(a)
-    except:
-        break
-    time.sleep(3)
+for y in range(0, len(coordinates)//2):
+    a = coordinates[2 * y]
+    b = coordinates[2 * y + 1]

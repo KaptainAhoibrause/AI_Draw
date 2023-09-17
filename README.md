@@ -1,1 +1,1 @@
-AI Draw wurde bei Jugendhackt in Köln, Deutschlanf von Fabio, Amir, Becca, Frédéric und Benjamin entwiickelt. Es wurde gebaut und gecodet um Leute die keinen Stift halten können, die Möglichkeit zu geben zu malen und Imperssionen auszudrücken.
+AI Draw wurde bei Jugendhackt 2023 (jugendhackt.org) in Köln, Deutschland von Fabio, Amir, Becca, Frédéric und Benjamin entwickelt. Es wurde gebaut und gecodet um Leute die keinen Stift halten können, die Möglichkeit zu geben zu malen und Imperssionen auszudrücken.

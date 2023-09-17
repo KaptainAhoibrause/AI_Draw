@@ -1,8 +1,8 @@
-#Draw AI
+Draw AI
 ---
 AI Draw wurde bei Jugendhackt 2023 (jugendhackt.org) in Köln, Deutschland von Fabio, Amir, Becca, Frédéric und Benjamin entwickelt. Es wurde gebaut und gecodet um Leute die keinen Stift halten können, die Möglichkeit zu geben zu malen und Imperssionen auszudrücken.
 
-##Technologien
+Technologien
 ---
 Verwendet wurde die AI AUTOMATIC1111 (https://github.com/AUTOMATIC1111/stable-diffusion-webui) sowie die Beispiel API aus dem Wiki-Artikel
 (https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/API).

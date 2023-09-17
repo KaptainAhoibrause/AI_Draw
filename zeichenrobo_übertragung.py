@@ -23,6 +23,7 @@ while True:
         print(value)
         a = a + 2
         b = b + 2
+        print(a)
     except:
         break
     time.sleep(3)

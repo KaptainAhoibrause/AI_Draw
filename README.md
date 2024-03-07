@@ -9,3 +9,7 @@ Verwendet wurde die AI-Umgebung AUTOMATIC1111 (https://github.com/AUTOMATIC1111/
 Um die Sprache aus der Sprach-Eingabe in Text umzuwandeln haben wir das Python Modul speech_recognition verwendet.
 Mittels OpenCV werden die generierten Bilder in für einen Plotter verabeitbare Linien umgewandelt. (Code ist noch nicht verfügbar)
 Um den Plotter anzusteuern haben wir einen Arduino mit C++ programmiert. Dieser Teil ist allerdings noch nicht fertig und der Code nicht verfügbar.
+
+Setup
+---
+Um die KI verwenden zu können muss AUTOMATIC1111 eingerichtet werden. Mun kann mit ai/main.py Die KI benutzt werden. Bei Aufruf des Programms wird eine Spracheingabe gefordert. Danach generiert die KI ein Bild. Sollte eine Fehlermeldung der Funktion für die Spracheingabe auftreten, kann es sein, dass das Mikrofon nichts aufgenommen hat/konnte. Außerdem kann es sein, dass man eine bestehende Internet-Verbindung braucht.

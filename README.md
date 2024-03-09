@@ -21,6 +21,9 @@ pip install pillow
 pip install SpeechRecognition
 pip install sounddevice
 pip install pydub
+pip install json
+pip install base64
+pip install io
 pip install pyaudio  #Diese Befehele müssen Nacheinander ausgeführt werden.
 ```
 Jetzt kann die KI gestartet werden. Dazu die Anweisungen auf der Seite von AUTOMATIC1111 befolgen.

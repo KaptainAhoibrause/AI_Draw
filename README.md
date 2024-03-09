@@ -11,7 +11,7 @@ Um den Plotter anzusteuern haben wir einen Arduino mit C++ programmiert. Dieser 
 ## Setup
 Um die KI verwenden zu können muss AUTOMATIC1111 installiert und eingerichtet werden.
 
-Dann mit `git clone placeholder` das main.py Skript in einen gewünschten Ordner klonen.
+Dann mit `git clone https://github.com/KaptainAhoibrause/AI_Draw.git` das main.py Skript in einen gewünschten Ordner klonen.
 Nun wird mit dem Befehl `python -m venv venvXY` im gleichen Ordner eine virtuelle Umgebung eingerichtet. Hierbei kann venvXY mit einem beliebigen Namen (z.B. ai_venv) ausgetauscht werden. Um die virtuelle Umgebung zu starten muss auf Linux der Befehl `source venvXY/bin/activate` ausgeführt werden. Für Windows siehe hier: https://python.land/virtual-environments/virtualenv
 Jetzt können mit den folgenden Befehlen die Abhängigkeiten installiert werden:
 ```
